@@ -1,14 +1,60 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Template Design</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="templates" content="temp">
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-  </head>
-  <body>
-    <!-- Header section //-->
-      <header class="header">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Internal Css-->
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --radius: 0.2;
+      --height: 5rem;
+      --textcolor: white;
+      --textpadding: 0.5rem;
+      --textbackground: transparent;
+      --boxbackground: black;
+      --fontfamily: 'Times New Roman', Times, serif;
+    }
+
+    .header {
+      background: var(--boxbackground);
+      height: 4rem;
+      display: flex;
+      opacity: 0.8;
+    }
+
+    .text {
+      height: var(--height);
+      color: var(--textcolor);
+      padding: var(--textpadding);
+      border-radius: var(--radius);
+      font-family: var(--fontfamily);
+    }
+
+    .Bname {
+      display: inline-block;
+      margin: 1rem 0 0 1rem;
+    }
+
+    .menu {
+      position: absolute;
+      right: 2rem;
+      font-size: 0.7rem;
+      margin: -0.5rem 0 0 0%;
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
     <span class="Bname text">Lorem Ipsum</span>
     <div class="menu text">
       <span>•</span>
@@ -16,6 +62,6 @@
       <span>•</span>
     </div>
   </header>
-      <!-- Header section ////-->
-  </body>
+</body>
+
 </html>
